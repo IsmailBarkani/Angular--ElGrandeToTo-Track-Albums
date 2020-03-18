@@ -1,1 +1,78 @@
-/* You can add global styles to this file, and also import other style files */
+.navbar{
+    opacity: 0.6;
+    border-bottom: 1.5px solid cornflowerblue;
+}
+.container-nav{
+    margin: 0 auto;
+}
+
+.menu-toggle{
+    position: fixed;
+    top: 2.5rem;
+    right: 2.5rem;
+    color: #eeeeee;
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+nav ul li a{
+    padding: 1rem 0;
+    margin: 0 3rem;
+    position: relative;
+    letter-spacing: 3px;
+}
+
+nav ul li a:last-child{
+    margin-right: 0;
+}
+
+nav ul li a::before,
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color:rgb(89, 230, 248);
+    left: 0;
+    transform: scaleX(0);
+    transition: all .3s;
+}
+
+nav ul li a::before{
+    top: 0;
+    transform-origin: left;
+}
+
+nav ul li a::after{
+    bottom: 0;
+    transform-origin: right;
+}
+
+
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+    transform: scaleX(1);
+}
+
+@media screen and (max-width: 700px){
+
+    nav ul li a{
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    .brand{
+        font-size: 5rem;
+    }
+  
+}
