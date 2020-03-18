@@ -8,5 +8,26 @@
         <div *ngIf="artist.genres.length > 0">
             Genres: <span *ngFor="let genre of artist.genres" > {{genre}} </span>
         </div>
+    
+        <div class="row" style="margin-top: 30px;">  
+            <div class="col-md-4" *ngFor="let album of albums">
+                <div class="card mb-4 shadow-sm">
+                    <div *ngIf="album.images.length > 0">
+                        <img  [src]="sanitizer.bypassSecurityTrustResourceUrl(album.images[0].url)" width="100%" height="255">
+                    </div>
+                  <div class="card-body">
+                    <p class="card-text" style="color: cadetblue;">{{album.name}}</p>
+                    <a href="">Detaille</a>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
     </div>
 </div>

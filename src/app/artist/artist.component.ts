@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { SpotifyService } from '../services/spotify.service';
 import { ActivatedRoute} from '@angular/router';
 import { map } from "rxjs/operators";
+import { DomSanitizer } from '@angular/platform-browser';
+
+
 
 
 @Component({
@@ -12,8 +15,10 @@ import { map } from "rxjs/operators";
 export class ArtistComponent implements OnInit {
 
   artist;
+  albums;
   constructor(private spotifyService:SpotifyService,
-              private route:ActivatedRoute) { }
+              private route:ActivatedRoute,
+              private sanitizer: DomSanitizer) { }
 
   ngOnInit(): void {
     this.route.params.pipe(
@@ -21,6 +26,12 @@ export class ArtistComponent implements OnInit {
     .subscribe((id) => {
       this.spotifyService.getArtist(id)
         .subscribe(artist => this.artist = artist);
+
+        this.spotifyService.getAlbums(id)
+        .subscribe(albums => {
+          this.albums = albums;
+          this.albums = this.albums.items;
+        });
     })
   }
 
