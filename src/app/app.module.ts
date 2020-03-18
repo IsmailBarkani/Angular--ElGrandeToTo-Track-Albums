@@ -10,17 +10,20 @@ import { Routes, RouterModule } from '@angular/router';
 import { SearchComponent } from './search/search.component';
 import { AboutComponent } from './about/about.component';
 import { SpotifyService } from './services/spotify.service';
+import { ArtistComponent } from './artist/artist.component';
 
 const appRouter:Routes = [
   {path:'' , component:SearchComponent},
-  {path:'about', component:AboutComponent}
+  {path:'about', component:AboutComponent},
+  {path:'artist/:id', component:ArtistComponent}
 ];
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     AboutComponent,
-    SearchComponent
+    SearchComponent,
+    ArtistComponent
   ],
   imports: [
     BrowserModule,
