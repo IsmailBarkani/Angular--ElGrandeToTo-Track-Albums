@@ -18,7 +18,7 @@ export class ArtistComponent implements OnInit {
   albums;
   constructor(private spotifyService:SpotifyService,
               private route:ActivatedRoute,
-              private sanitizer: DomSanitizer) { }
+              public sanitizer: DomSanitizer) { }
 
   ngOnInit(): void {
     this.route.params.pipe(

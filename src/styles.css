@@ -91,3 +91,13 @@ nav ul li a:hover::after{
     margin-right: 10px;
     border-radius: 50%;
 }
+
+.album-thumb{
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: rgb(84, 193, 236);
+}

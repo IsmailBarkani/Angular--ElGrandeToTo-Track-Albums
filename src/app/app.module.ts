@@ -11,11 +11,13 @@ import { SearchComponent } from './search/search.component';
 import { AboutComponent } from './about/about.component';
 import { SpotifyService } from './services/spotify.service';
 import { ArtistComponent } from './artist/artist.component';
+import { AlbumComponent } from './album/album.component';
 
 const appRouter:Routes = [
   {path:'' , component:SearchComponent},
   {path:'about', component:AboutComponent},
-  {path:'artist/:id', component:ArtistComponent}
+  {path:'artist/:id', component:ArtistComponent},
+  {path:'album/:id', component:AlbumComponent}
 ];
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ const appRouter:Routes = [
     NavbarComponent,
     AboutComponent,
     SearchComponent,
-    ArtistComponent
+    ArtistComponent,
+    AlbumComponent
   ],
   imports: [
     BrowserModule,
