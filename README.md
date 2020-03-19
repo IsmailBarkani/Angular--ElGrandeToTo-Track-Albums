@@ -20,6 +20,10 @@ Creates a functional spotify search front end using entirelly Angular 9. Uses an
   <img src="https://user-images.githubusercontent.com/51321011/77080393-88232800-69f9-11ea-9b60-60b65ee48381.png">
 </p>
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/51321011/77081123-755d2300-69fa-11ea-8a03-3d63e85d6d0b.png">
+</p>
+
 ## Getting Started
 - Clone the repo
  ```git
