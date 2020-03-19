@@ -101,3 +101,12 @@ nav ul li a:hover::after{
     border-style: solid;
     border-color: rgb(84, 193, 236);
 }
+
+.search{
+    height: 90px;
+    border-style: solid;
+    border-color: rgb(55, 170, 247);
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.295);
+    border-radius: 20px;
+}

@@ -14,7 +14,8 @@ import { ArtistComponent } from './artist/artist.component';
 import { AlbumComponent } from './album/album.component';
 
 const appRouter:Routes = [
-  {path:'' , component:SearchComponent},
+  {path:'home' , component:SearchComponent},
+  {path: '' , redirectTo:'/artist/4BFLElxtBEdsdwGA1kHTsx',pathMatch:'full'},
   {path:'about', component:AboutComponent},
   {path:'artist/:id', component:ArtistComponent},
   {path:'album/:id', component:AlbumComponent}

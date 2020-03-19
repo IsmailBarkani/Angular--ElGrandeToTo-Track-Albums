@@ -11,9 +11,12 @@
     <div *ngFor="let res of ress.artists.items">
         <div class="row">
             <div class="col-lg-12">
-                <div style="height: 80px;background-color:rgba(0, 0, 0, 0.2); margin-bottom: 10px;">
-                    <h5>   <a routerLink="/artist/{{res.id}}">{{res.name}}</a> </h5>
-                    <strong>Genre: </strong>{{res.genres}}
+                <div class="search">
+                    <div style="padding: 10px;">
+                        <h5>{{res.name}}</h5>
+                    <strong>Genre: </strong>{{res.genres}} 
+                    <a routerLink="/artist/{{res.id}}" class="btn btn-sm btn-outline-info"> Albums...</a>
+                    </div>
                 </div>
             </div>
         </div>
