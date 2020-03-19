@@ -7,18 +7,22 @@ Creates a functional spotify search front end using entirelly Angular 9. Uses an
 <p align="center">
   <img src="https://user-images.githubusercontent.com/51321011/77079940-00d5b480-69f9-11ea-8960-42a9271a75a3.png">
 </p>
+
 - Playslit
 <p align="center">
   <img src="https://user-images.githubusercontent.com/51321011/77080204-4f834e80-69f9-11ea-8f4e-27d9949fda51.png">
 </p>
-View in Spotify
+
+- View in Spotify
 <p align="center">
   <img src="https://user-images.githubusercontent.com/51321011/77080333-793c7580-69f9-11ea-8119-9a017755387b.png">
 </p>
+
 - Search for more Albums
 <p align="center">
   <img src="https://user-images.githubusercontent.com/51321011/77080393-88232800-69f9-11ea-9b60-60b65ee48381.png">
 </p>
+
 - Example
 <p align="center">
   <img src="https://user-images.githubusercontent.com/51321011/77081123-755d2300-69fa-11ea-8a03-3d63e85d6d0b.png">
