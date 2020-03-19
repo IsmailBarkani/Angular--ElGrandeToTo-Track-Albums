@@ -19,4 +19,18 @@
             </div>
         </div>
     </header>
+
+    <div class="album-track">
+        <h2 style="margin-top: 30px;">Album Tracks</h2>
+        <div *ngFor = "let track of album.tracks.items">
+            <div class="search" >
+                
+                <div style="margin-top: 10px; margin-left: 10px;">
+                    <h5 style="font-style: italic; font-family:monospace;" > {{track.track_number}} -- {{track.name}} </h5>
+                    <a href=" {{track.preview_url}} " target="_blank" class="btn btn-sm btn-outline-success">Preview Track</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </div>
