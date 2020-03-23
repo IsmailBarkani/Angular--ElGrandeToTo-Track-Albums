@@ -10,7 +10,7 @@ export class SpotifyService{
     artistUrl:string;
     albumsUrl:string;
     albumUrl:string;
-    private access_token: string = 'BQC67WVuUPzIv9M6T98DLolBmjVCoUhqfytRrYd1GVhbBGpc4rKiTZ-bVJL72BXy_syccOUSyG5kXNq0SE_A93tnf_I7prV27TRRSigukxFA1ltb-mzMMrJNg1hCK7mENPy005uff2la3GImrJb-Ra1esJo8i-MOQ7jmQR9O-jfwaGy1C502M3KT_2UDWg0Ah6v5tPift3cmWqW6STN5kkxxHnOZVdq6u56g6OkPt4ePw3VimD2N394hFAY89qIwY9R_oAN_vgPRSyKlWzJh3sZ96BsCsGLgwA';
+    private access_token: string = 'BQBkssnrTprsPE5EDjUrupRBEYDG8V122WBda3L3dw5-sOnovo6LxoU6ffOs0N2Bj7iLImerGuqJTyflNsnTE3RznmBcUZaB7RDpDjguMH_5HIsDlzX6S8zRAH2khzT9DitJDDsBp6qZV0Og_yoV05ZxrEEhqU22GRsZlG-wMZr2pygx8cZtxfMUlxh2zmVfT5bYLs0RXJntlUDC-VvY1CzEMU5hXVF7PV4D8Mmv_9DIsJSUYyrIZa_ME33AiA-p2gn1WL_uBs_M-raIpocNEBSU1iCoawubqg';
 
 
     constructor(private httpClient:HttpClient){
